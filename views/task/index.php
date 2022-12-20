@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'priority',
                 'format' => 'text',
-                'filter' => Html::activeDropDownList($searchModel, 'priority', [0 => 'alta', 1 => 'media', 2 => 'baja'], ['class' => 'form-control', 'prompt' => 'Todas']),
+                'filter' => Html::activeDropDownList($searchModel, 'priority', [1 => 'High', 2 => 'Medium', 3 => 'Low'], ['class' => 'form-control', 'prompt' => 'All']),
                 'value' => function ($searchModel) {
                     if ($searchModel->priority === 1) {
                         return 'High';
